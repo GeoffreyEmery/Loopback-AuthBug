@@ -1,0 +1,39 @@
+{
+  "local": {
+    "provider": "local",
+    "module": "passport-local",
+    "usernameField": "username",
+    "passwordField": "password",
+    "authPath": "/auth/local",
+    "successRedirect": "/auth/account",
+    "failureRedirect": "/local",
+    "failureFlash": true
+  },
+  "facebook-login": {
+    "provider": "facebook",
+    "module": "passport-facebook",
+    "clientID": "894333790636892",
+    "clientSecret": "94ebceb1ecf91a8b6f62e000660d4699",
+    "callbackURL": "",
+    "authPath": "/auth/facebook",
+    "callbackPath": "/auth/facebook/callback",
+    "successRedirect": "/auth/account",
+    "failureRedirect": "/login",
+    "scope": ["email"],
+    "failureFlash": true
+  },
+  "google-login": {
+    "provider": "google",
+    "module": "passport-google-oauth",
+    "strategy": "OAuth2Strategy",
+    "clientID": "1088727000046-01saq1jkgefb86g2kjcvh8a8gbud87u6.apps.googleusercontent.com",
+    "clientSecret": "XOfEbLOz1UHHuU5DlDBmmTsy",
+    "callbackURL": "/auth/google/callback",
+    "authPath": "/auth/google",
+    "callbackPath": "/auth/google/callback",
+    "successRedirect": "/auth/account",
+    "failureRedirect": "/login",
+    "scope": ["email", "profile"],
+    "failureFlash": true
+  }
+}
