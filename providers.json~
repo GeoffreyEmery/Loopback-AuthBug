@@ -26,7 +26,7 @@
     "provider": "google",
     "module": "passport-google-oauth",
     "strategy": "OAuth2Strategy",
-    "clientID": "1088727000046-01saq1jkgefb86g2kjcvh8a8gbud87u6.apps.googleusercontent.com",
+    "clientID": "  ",
     "clientSecret": " ",
     "callbackURL": "/auth/google/callback",
     "authPath": "/auth/google",
